@@ -8,15 +8,33 @@ int main()
 	int a, b, c, d, e, f, g, h, i, j;
 
 	a = 1;
+	cout << a << endl;
+
 	b = 2;
+	cout << b << endl;
+
 	c = 3;
-	d = a++ + b++ + c++;
-	e = a-- + b-- + c--;
-	f = --a + ++b + c--;
-	g = ++a + --b + --c;
-	h = d++ + ++e + ++f + g--;
-	i = --d + --e + --f + --g;
-	j = h++ + ++i;
+	cout << c << endl;
+
+	d = a++ + b++ + c++;//1+2+3=6, a=2 b=3 c=4
 	cout << d << endl;
+
+	e = a-- + b-- + c--;//2+3+4=9, a=1 b=2 c=3
+	cout << e << endl;
+
+	f = --a + ++b + c--;//0+3+3=6, a=0 b=3 c=2
+	cout << f << endl;
+
+	g = ++a + --b + --c;//1+2+1=4, a=1 b=2 c=1
+	cout << g << endl;
+
+	h = d++ + ++e + ++f + g--;//6+10+7+4=27, d=7 e=10 f=7 g=3
+	cout << h << endl;
+
+	i = --d + --e + --f + --g;//6+9+6+2=23, d=6 e=9 f=6 g=2
+	cout << i << endl;
+
+	j = h++ + ++i;//27+24=51, h=28 i=24
+	cout << j << endl;
 
 }
