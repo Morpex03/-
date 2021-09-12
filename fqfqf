@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+	int a, b, c, d, e, f, g, h, i, j;
+
+	a = 1;
+	b = 2;
+	c = 3;
+	d = a++ + b++ + c++;
+	e = a-- + b-- + c--;
+	f = --a + ++b + c--;
+	g = ++a + --b + --c;
+	h = d++ + ++e + ++f + g--;
+	i = --d + --e + --f + --g;
+	j = h++ + ++i;
+	cout << d << endl;
+
+}
